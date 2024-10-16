@@ -1836,8 +1836,13 @@ body {
     margin: auto;
   }
   }
-  
-  
+  .carousel{
+    top: 45px !important;
+  }
+  .why-us{
+    position: relative;
+    top: 45px;
+  }
   .ad {
     position: fixed;
     height: 200px;
