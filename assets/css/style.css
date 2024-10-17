@@ -31,9 +31,9 @@ body {
   h6 {
     font-family: "Raleway", sans-serif;
   }
-  main{
+  /* main{
     margin-top:100px;
-  }
+  } */
   
   /*--------------------------------------------------------------
   # Back to top button
@@ -125,7 +125,12 @@ body {
       transition-delay: 0 !important;
     }
   }
-  
+  @media screen and (max-width: 360px) {
+   .carousel{
+    position: relative !important;
+    top: -120px;
+   }
+  }
   /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
@@ -1836,12 +1841,10 @@ body {
     margin: auto;
   }
   }
-  .carousel{
-    top: 45px !important;
-  }
+  
   .why-us{
     position: relative;
-    top: 45px;
+    top: -111px;
   }
   .ad {
     position: fixed;
