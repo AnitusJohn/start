@@ -1735,14 +1735,16 @@ body {
     margin-bottom: 0;
     margin-left: 11px;
   }
-  
+  .carousel-indicators{
+    z-index: -1 !important;
+  }
   .top-contact i {
     background-color: #f44337;
     padding: 0px 2px;
   }
-  .top-header{
+  /* .top-header{
     margin-bottom: 8px;
-  }
+  } */
   .service-card img {
     height: 130px;
     width: 100%;

@@ -75,13 +75,175 @@
 	<!-- Template Main CSS File -->
 <!-- <link rel="stylesheet" href="./assets/css/header.css"> -->
  <link rel="stylesheet" href="./assets/css/header.css">
+
+ <style>
+    
+img {
+  /* background-color: rgba(16,46,72,0.6);  */
+    background-blend-mode: multiply;
+}
+
+
+
+.content {
+	margin-bottom: 15px;
+  position: relative;
+  /* width: 90%; */
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(00,45,114,0.8);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+}
+
+.content-details h3{
+  color: red;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.content h3 {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease-out;
+  will-change: transform;
+}
+
+.content:hover h3 {
+  -webkit-transform: translate3d(-1rem, 0, 0);
+          transform: translate3d(-1rem, 0, 0);
+}
+.content i {
+  position: absolute;
+  width: 1.1em;
+  right: -1.4rem;
+  opacity: 1;
+  top: 38%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+.content-image{
+    border: 1px solid #036;
+    border-radius: 15px;
+}
+.content:hover i {
+  opacity: 1;
+  right: -3rem;
+}
+
+
+
+/*
+.content-details h3 {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease-out;
+  will-change: transform;
+}
+
+.content-details:hover h3 {
+  -webkit-transform: translate3d(-1rem, 0, 0);
+          transform: translate3d(-1rem, 0, 0);
+}
+.content-details i {
+  position: absolute;
+  width: 1.1em;
+  right: 0px;
+  right: 0rem;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+.content-details i * {
+  stroke-width: 5;
+  stroke-color: transparent;
+}
+.content-details:hover i {
+  opacity: 1;
+  right: -2rem;
+}
+*/
+ </style>
 </head>
 
 <body>
 	
 
+	<!-- ======= Header ======= -->
+	<!-- <header id="header" class="fixed-top">
+		<div class="top-header">
+			<div class="container">
+				<div class="top-contact">
+					<div class="text">
+						<p><img src="assets/img/phone.png">
+							<span class="word ">INDIA: +91 9994207721</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container d-flex align-items-center">
+
+			<h1 class="logo me-auto"><a href="index.html"><img src="./assets/img/logo.png"></a></h1>
+		
+			<nav id="navbar" class="navbar order-last order-lg-0">
+				<ul>
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Courses</a></li>
+					<li><a href="">Universities</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+				<i class="bi bi-list mobile-nav-toggle"></i>
+			</nav>
+
+			<a href="javascript:void(0);" data-target="#AdmissionForm" data-toggle="modal" class="get-started-btn">Quick
+				Contact</a>
+
+		</div>
+	</header> -->
+	<!-- End Header -->
+
 	
-	<header>
+    <header>
 		<div class="top-header">
 			<div class="container">
 				<div class="top-contact">
@@ -117,6 +279,38 @@
 	</header>
 
 
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="content text-center">
+                    <a href="./assets/pdf/SA APPLICATION.pdf" target="_blank">
+                      <div class="content-overlay"></div>
+                      <img class="content-image" src="./assets/img/application.png">
+                      <div class="content-details">
+                        <h3 class="content-title">APPLICATION<i class="fas fa-arrow-right arrow"></i></h3>
+                      </div>
+                    </a>
+                    <a href="./assets/pdf/SA APPLICATION.pdf"><button> Download</button></a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="content text-center">
+                <a href="./assets/pdf/SA Prospect.pdf" target="_blank">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="./assets/img/broctue.png">
+                  <div class="content-details">
+                    <h3 class="content-title">Prospect<i class="fas fa-arrow-right arrow"></i></h3>
+                  </div>
+                </a>
+                <a href="./assets/pdf/SA Prospect.pdf"><button> Download</button></a>
+        </div>
+    </div>
+    </div>
+</section>
+	
 	<section class="contact" id="contact">
 		<div class="section-title">
 			<h2>Contact Us</h2>
@@ -611,7 +805,7 @@ PSH Building,<br> Opp Thuckalay Bus Stand,<br> Thuckalay,<br> Kanyakumari Dist,<
 		</div>
 	</div>
 
-	<script>
+    <script>
 		// For toggling and finding number of children and other stuff is done here!
 	
 	const navigation = document.getElementById("nav");
