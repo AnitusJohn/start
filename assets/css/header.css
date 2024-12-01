@@ -21,7 +21,7 @@ nav {
   justify-content: space-around;
   /* position: fixed; */
   width: 100%;
-  background: #03000e;
+  background: #fff;
   box-shadow: var(--nav-shadow);
 }
 
@@ -51,8 +51,8 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
+  color: #03000e;
+  text-decoration: none !important;
   position: relative;
 }
 
@@ -155,3 +155,14 @@ a:hover{
   }
 }
 
+@media (min-width: 0) and (max-width: 360px) {
+  .logo img{
+    width:200px !important;
+  }
+  nav{
+    background-color: #03000e;
+  }
+  #nav li a{
+       color: #fff;
+  }
+}
