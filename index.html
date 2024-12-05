@@ -69,6 +69,101 @@
 	<link rel="stylesheet" href="./assets/css/header.css">
 	
 	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+	<style>
+    
+
+
+		.card {
+			position: relative;
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			text-align: center;
+			transition: transform 0.3s, box-shadow 0.3s;
+			width: 250px;
+			padding-bottom: 20px;
+			margin-bottom: 15px;
+		}
+		
+		.card::before,
+		.card::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			background: #ff1717;
+			transition: all 0.5s ease;
+		}
+		
+		.card::before {
+			top: 0;
+			left: 0;
+		}
+		
+		.card::after {
+			bottom: 0;
+			right: 0;
+		}
+		
+		.card:hover::before,
+		.card:hover::after {
+			width: 100%;
+		}
+		
+		.card:hover::before {
+			height: 100%;
+			width: 2px;
+			transition: width 0.5s ease, height 0.5s ease 0.5s;
+		}
+		
+		.card:hover::after {
+			height: 100%;
+			width: 2px;
+			transition: width 0.5s ease, height 0.5s ease 0.5s;
+		}
+		
+		.card img {
+			width: 100%;
+			height: 150px;
+			object-fit: cover;
+		}
+		
+		.card-content {
+			padding: 15px;
+		}
+		
+		.card-content h3 {
+			margin: 10px 0;
+			font-size: 20px;
+			color: #333;
+			text-transform: capitalize;
+		}
+		
+		.card-content p {
+			color: #777;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		
+		.card-content a {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 10px 20px;
+			background: #0a58ca;
+			color: #fff;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: background 0.3s;
+		}
+		
+		.card-content a:hover {
+			background: #0a58ca;
+		}
+		
+		  </style>
 </head>
 
 <body>
@@ -231,62 +326,65 @@
 			</div>
 		</section>
 
-		<!-- ======= Popular Courses Section ======= -->
-		<!-- <section id="popular-universities" class="courses">
-			<div class="container">
-
-				<div class="section-title">
-					<h2>Universities</h2>
-					<p>Popular Universities</p>
-				</div>
-				<p>Startup Academy - Online degree College  is an authorized information center that has
-					collaborated with the PRIST University, ISBM University, Indian  of Industry Interaction
-					Education and Research(IIIIER), and provides the best quality courses in Regular, Parttime,
-					Blended/Virtual, and Distance Learning in all sectors such as 3 years polytechnic diploma,
-					vocational diploma, skill development courses, Engineering, Humanities, Commerce, and Science.</p>
-
-				<div class="row" data-aos-delay="100">
-					<div class="col-lg-3 col-md-3 d-flex align-items-stretch">
-						<div class="course-item">
-							<img src="assets/img/MHRD.jpg" class="img-fluid" alt="...">
-							<div class="course-content">
-								<h3><a href="javascript:void(0);">MHRD</a></h3>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-3 d-flex align-items-stretch">
-						<div class="course-item">
-							<img src="./assets/img/PRIST_LOGO.jpg" class="img-fluid" alt="...">
-							<div class="course-content">
-								<h3><a href="javascript:void(0);">PRIST</a></h3>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-3 d-flex align-items-stretch">
-						<div class="course-item">
-							<img src="assets/img/ISBM.jpg" class="img-fluid" alt="...">
-							<div class="course-content">
-								<h3><a href="javascript:void(0);">ISBM</a></h3>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-3 d-flex align-items-stretch">
-						<div class="course-item">
-							<img src="assets/img/iiiier.jpg" class="img-fluid" alt="...">
-							<div class="course-content">
-								<h3><a href="javascript:void(0);">IIIIER</a></h3>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
+		<section class="contact container" id="contact">
+			<div class="section-title">
+				<h2>Courses</h2>
+				<p>Our Programs</p>
 			</div>
-		</section> -->
+	
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+		
+						<div class="card">
+							<img src="./assets/img/startup_Open Schooling.jpg" alt="Online Classes">
+							<div class="card-content">
+								<h3>Open Schooling <br> 10th & 12th  </h3>
+								<a href="./open_schooling.html">View Courses</a>
+							</div>
+						</div>
+						
+					  </div>
+					  <div class="col-md-3">
+		
+						<div class="card">
+							<img src="./assets/img/startup_online.png" alt="Online Classes">
+							<div class="card-content">
+								<h3>Online & Distance <br> UG / PG </h3>
+								<a href="./online-distance.html">View Courses</a>
+							</div>
+						</div>
+						
+					  </div>
+					  <div class="col-md-3">
+		
+						<div class="card">
+							<img src="./assets/img/startup_bvoc skills.jpg" alt="Online Classes">
+							<div class="card-content">
+								<h3>B.Voc & Skills <br> Learning
+								</h3>
+								<a href="./bvoc-&-skills-learning.html">View Courses</a>
+							</div>
+						</div>
+						
+					  </div>
+					  <div class="col-md-3">
+		
+						<div class="card">
+							<img src="./assets/img/startup_placement.png" alt="Online Classes">
+							<div class="card-content">
+								<h3>Attestation & Placements</h3>
+								<a href="./attestation-and-placement.html">View Courses</a>
+							</div>
+						</div>
+						
+					  </div>
+			</div>
+		</section>
 
+	
 		<section id="popular-courses" class="courses">
 			<div class="container">
 
